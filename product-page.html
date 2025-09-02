@@ -4,10 +4,31 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Simple Product Page</title>
+  <link rel="stylesheet" href="style.css">
 
 </head>
+
+<script>
+
+  //for mobile view
+  function toggleMenu() {
+    document.querySelector(".nav-links").classList.toggle("show");
+  }
+</script>
+
 <body>
-  <nav></nav>
+    <nav>
+    <div class="logo">SleepDeprived</div>
+    <ul class="nav-links">
+      <li><a href="product-page.html">Products</a></li>
+      <li><a href="social-page.html">Social</a></li>
+    </ul>
+    <div class="burger" onclick="toggleMenu()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    </nav>
   <div class="container">Melge and Chavez
     <div class="product">
       
