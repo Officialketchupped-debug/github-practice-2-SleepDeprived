@@ -159,22 +159,93 @@ nav {
 }
 
 .price-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   font-size: 20px;
   font-weight: bold;
   margin-bottom: 10px;
 }
 
-.old-price {
-  font-size: 16px;
-  text-decoration: line-through;
-  color: white;
+.current-price {
+  font-size: 24px;
+  font-weight: bold;
+  color: green;
+}
+
+.discount {
+  background-color: black;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  padding: 2px 6px;
+  border-radius: 4px;
   margin-left: 10px;
 }
 
+.old-price {
+  font-size: 16px;
+  text-decoration: line-through;
+  color: rgb(0, 0, 0);
+  margin-left: 10px;
+}
+
+
+
 .quantity-cart {
+  display: flex;
+  align-items: center;
   margin-top: 20px;
 }
 
+.quantity-btn {
+  background: none;
+  border: none;
+  color: #ff7d1a;
+  font-size: 24px;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 0 10px;
+}
+
+.quantity {
+  font-size: 18px;
+  margin: 0 10px;
+}
+
+.quantity-btn:hover {
+        opacity: 0.7;
+    }
+    
+.quantity {
+  font-weight: 700;
+  font-size: 16px;
+}
+    
+.add-to-cart-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  width: 100%;
+  background-color: #ff7d1a;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 18px;
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 15px 20px rgba(255, 125, 26, 0.25);
+}
+    
+.add-to-cart-btn:hover {
+  background-color: hsl(300, 43%, 22%);
+}
+
+.add-to-cart-btn svg {
+    fill: white;
+}
+  
 .footer-container {
   background: hsl(300, 43%, 22%);
   color: white;
