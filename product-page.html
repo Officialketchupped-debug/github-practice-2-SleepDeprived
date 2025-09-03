@@ -5,49 +5,44 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Simple Product Page</title>
   <link rel="stylesheet" href="style.css">
-  
-
 </head>
 
 <body>
+  <nav>
+    <div class="logo">SleepDeprived</div>
+    <ul class="nav-links">
+      <li><a href="product-page.html">Products</a></li>
+      <li><a href="social-page.html">Social</a></li>
+    </ul>
+    <div class="burger" onclick="toggleMenu()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </nav>
     
-      
-    <nav>
-        <div class="logo">SleepDeprived</div>
-            <ul class="nav-links">
-                <li><a href="product-page.html">Products</a></li>
-                <li><a href="social-page.html">Home</a></li>
-            </ul>
-        <div class="burger" onclick="toggleMenu()">
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
-    </nav>
-    
-  
   <div class="product-container">
     <div class="image-section">
       <img class="main-image" src="asset/image-product-1.jpg"/>
-       <div class="thumbnail-row">
-        <img class ="thumbnail active" src="asset/image-product-1-thumbnail.jpg"/>
-        <img class ="thumbnail" src="asset/image-product-2-thumbnail.jpg"/>
-        <img class ="thumbnail" src="asset/image-product-3-thumbnail.jpg"/>
-        <img class ="thumbnail" src="asset/image-product-4-thumbnail.jpg"/>
+      <div class="thumbnail-row">
+        <img class="thumbnail active" src="asset/image-product-1-thumbnail.jpg" data-full="asset/image-product-1.jpg"/>
+        <img class="thumbnail" src="asset/image-product-2-thumbnail.jpg" data-full="asset/image-product-2.jpg"/>
+        <img class="thumbnail" src="asset/image-product-3-thumbnail.jpg" data-full="asset/image-product-3.jpg"/>
+        <img class="thumbnail" src="asset/image-product-4-thumbnail.jpg" data-full="asset/image-product-4.jpg"/>
       </div>
     </div>
+
     <div class="info-section">
       <div class="company-name">Sleep Deprived</div>
       <div class="product-title">Fall Limited Edition Sneakers</div>
       <div class="product-description">
         These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they’ll withstand everything the weather can offer.
       </div>
-    <div class="price-section"></div>
-    <div class="quantity-cart"></div> 
+      <div class="price-section"></div>
+      <div class="quantity-cart"></div> 
     </div>
   </div>
 
   <script src="script.js"></script>
-  
 </body>
 </html>
