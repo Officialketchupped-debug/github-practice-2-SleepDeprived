@@ -23,34 +23,3 @@ window.addEventListener("DOMContentLoaded", () => {
       .catch(err => console.error("Error loading footer:", err));
     }
 });
-
-
-document.addEventListener('DOMContentLoaded', function() {
-  const minusBtn = document.querySelector('.quantity-btn.minus');
-  const plusBtn = document.querySelector('.quantity-btn.plus');
-  const quantityDisplay = document.querySelector('.quantity');
-  let quantity = 0;
-
-  minusBtn.addEventListener('click', function() {
-      if (quantity > 0) {
-          quantity--;
-          quantityDisplay.textContent = quantity;
-      }
-  });
-
-  plusBtn.addEventListener('click', function() {
-      quantity++;
-      quantityDisplay.textContent = quantity;
-  });
-
-  const addToCartBtn = document.querySelector('.add-to-cart-btn');
-  addToCartBtn.addEventListener('click', function() {
-      if (quantity > 0) {
-          alert(`Added ${quantity} item(s) to cart.`);
-          quantity = 0;
-          quantityDisplay.textContent = quantity;
-      } else {
-          alert('Please select at least one item to add to cart.');
-      }
-  });
-});
