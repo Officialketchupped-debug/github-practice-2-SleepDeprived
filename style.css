@@ -174,3 +174,56 @@ nav {
 .quantity-cart {
   margin-top: 20px;
 }
+
+.footer-container {
+  background: hsl(300, 43%, 22%);
+  color: white;
+  text-align: center;
+  padding: 5px 5px;
+  margin-top: 50px;
+}
+
+.footer-copy {
+  font-size: 16px;
+  margin: 4px;
+  opacity: 0.9;
+}
+
+.footer-social {
+  margin: 0px 0;
+}
+
+.footer-social a {
+  display: inline-block;
+  margin: 0 10px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.footer-social img {
+  width: 18px;
+  height: 18px;
+  margin: 0 0px;
+  filter: invert(100%);
+}
+
+.footer-social a:hover img {
+  filter: invert(67%) sepia(43%) saturate(4876%) hue-rotate(311deg) brightness(94%) contrast(98%);
+  transform: scale(1.2);
+}
+
+.footer-links {
+  font-size: 10px;
+  margin: 2px 0;
+}
+
+.footer-links a {
+  color: hsl(333, 80%, 67%);
+  text-decoration: none;
+  margin: 0 8px;
+  font-size: 10x;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: white;
+}
