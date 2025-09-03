@@ -5,7 +5,7 @@
   margin: 0;
   padding: 0;
   box-sizing: content-box;
-  font-family: "Spartan", sans-serif;
+  font-family: "League", sans-serif;
 }
 
 body {
@@ -260,58 +260,57 @@ nav {
     fill: white;
 }
   
-.footer-container {
-  background: hsl(300, 43%, 22%);
-  color: white;
+footer {
+  background-color: hsl(300, 43%, 22%);
+  color: hsl(300, 24%, 96%);
+  padding: 10px 0;
   text-align: center;
-  padding: 5px 5px;
-  margin-top: 50px;
 }
 
-.footer-copy {
-  font-size: 16px;
-  margin: 4px;
-  opacity: 0.9;
-}
-
-.footer-social {
-  margin: 0px 0;
-}
-
-.footer-social a {
-  display: inline-block;
-  margin: 0 10px;
-  transition: transform 0.3s ease, filter 0.3s ease;
-}
-
-.footer-social img {
-  width: 18px;
-  height: 18px;
-  margin: 0 0px;
-  filter: invert(100%);
-}
-
-.footer-social a:hover img {
-  filter: invert(67%) sepia(43%) saturate(4876%) hue-rotate(311deg) brightness(94%) contrast(98%);
-  transform: scale(1.2);
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .footer-links {
-  font-size: 10px;
-  margin: 2px 0;
+  margin-bottom: 10px;
 }
 
 .footer-links a {
-  color: hsl(333, 80%, 67%);
+  color: #aaa;
+  margin: 0 10px;
   text-decoration: none;
-  margin: 0 8px;
-  font-size: 10x;
-  transition: color 0.3s ease;
+  font-size: 14px;
 }
 
 .footer-links a:hover {
-  color: white;
+  color: #fff;
 }
+
+.footer-copy {
+  font-size: 13px;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.footer-socials img {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.footer-socials a:hover img {
+  transform: scale(1.1);
+  opacity: 0.8;
+}}
 
 .test
 {
@@ -331,6 +330,8 @@ nav {
   gap: 30px;
   width: 100%;
   margin: 0px;
+  margin-top: 20px;
+  margin-bottom: 80px;
   color: white;
 }
 
@@ -340,7 +341,7 @@ nav {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.125);
   border-radius: 10px;
   padding: 20px;
-  width: 310px;
+  width: 340px;
   display: flex;
   flex-direction: column;
   gap: 20px;
