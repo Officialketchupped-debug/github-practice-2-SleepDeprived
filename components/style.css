@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
 
-*
-{
+* {
   margin: 0;
   padding: 0;
   box-sizing: content-box;
@@ -11,11 +10,10 @@
 body {
   background-color: white;
   color: black;
-  
   background-image: url('asset/bg-pattern-top-desktop.svg'), url('asset/bg-pattern-bottom-desktop.svg');
   background-repeat: no-repeat, no-repeat;
   background-position: top left, bottom right;
-  background-size: 40%, 65%; /* Or adjust as needed */
+  background-size: 40%, 65%;
   background-attachment: fixed, fixed;
 }
 
@@ -93,6 +91,45 @@ nav {
 
   .nav-links.show {
     display: flex;
+  }
+
+  .title {
+    text-align: center;
+    font-size: 2.4rem !important;
+    width: 350px !important;
+  }
+
+  .subtitle {
+    text-align: center;
+    justify-self: center;
+    font-size: 1rem !important;
+    width: 300px !important;
+  }
+
+  .rating-box-1, .rating-box-2, .rating-box-3 {
+    padding-left: 0 !important;
+    padding-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .company-name, .product-title, .product-description {
+    text-align: center;
+  }
+
+  .info-section {
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+    flex: 1 1 100%;
+    padding-bottom: 100px;
+  }
+
+  .add-to-cart-btn {
+    width: 80%;
+    margin: 0 auto;
   }
 }
 
@@ -203,8 +240,6 @@ nav {
   margin-left: 10px;
 }
 
-
-
 .quantity-cart {
   display: flex;
   align-items: center;
@@ -224,23 +259,19 @@ nav {
 .quantity {
   font-size: 18px;
   margin: 0 10px;
+  font-weight: 700;
 }
 
 .quantity-btn:hover {
-        opacity: 0.7;
-    }
-    
-.quantity {
-  font-weight: 700;
-  font-size: 16px;
+  opacity: 0.7;
 }
-    
+
 .add-to-cart-btn {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 15px;
-  width: 100%;
+  width: 80%;
   background-color: #ff7d1a;
   color: white;
   border: none;
@@ -250,16 +281,17 @@ nav {
   font-size: 16px;
   cursor: pointer;
   box-shadow: 0 15px 20px rgba(255, 125, 26, 0.25);
+  margin: 0 auto;
 }
-    
+
 .add-to-cart-btn:hover {
   background-color: hsl(300, 43%, 22%);
 }
 
 .add-to-cart-btn svg {
-    fill: white;
+  fill: white;
 }
-  
+
 footer {
   background-color: hsl(300, 43%, 22%);
   color: hsl(300, 24%, 96%);
@@ -312,8 +344,7 @@ footer {
   opacity: 0.8;
 }
 
-.test
-{
+.test {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -322,21 +353,18 @@ footer {
   padding-top: 0;
 }
 
-.testimonial 
-{
+.testimonial {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
   width: 100%;
-  margin: 0px;
   margin-top: 20px;
   margin-bottom: 80px;
   color: white;
 }
 
-.card 
-{
+.card {
   background: hsl(300, 43%, 22%);
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.125);
   border-radius: 10px;
@@ -347,32 +375,27 @@ footer {
   gap: 20px;
 }
 
-.card:nth-child(1) 
-{
+.card:nth-child(1) {
   margin-top: 0px;
   margin-bottom: 20px;
 }
-.card:nth-child(2) 
-{
+.card:nth-child(2) {
   margin-top: 10px;
   margin-bottom: 10px;
 }
-.card:nth-child(3) 
-{
+.card:nth-child(3) {
   margin-top: 20px;
   margin-bottom: 0px;
 }
 
-.card-header 
-{
+.card-header {
   display: grid;
   grid-template-columns: 60px 1fr;
   column-gap: 10px;
   align-items: left;
 }
 
-.card-header img 
-{
+.card-header img {
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -380,27 +403,23 @@ footer {
   padding: 10px;
 }
 
-.user-info 
-{
+.user-info {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.username 
-{
+.username {
   font-weight: bold;
   margin-bottom: 5px;
 }
 
-.verified 
-{
+.verified {
   color: hsl(333, 80%, 67%);
   font-size: 0.85em;
 }
 
-.review 
-{
+.review {
   font-size: 1.1em;
   line-height: 1.3;
   padding: 10px;
@@ -408,8 +427,7 @@ footer {
   margin-top: 0;
 }
 
-.container
-{
+.container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -420,26 +438,21 @@ footer {
   margin: 0;
 }
 
-.header
-{
+.header {
   text-align: left;
   margin-left: 50px;
   width: 500px;
-  padding-bottom: 0px;
-  margin-bottom: 0px;
   margin: 20px;
 }
 
-.title
-{
+.title {
   font-size: 3.5rem;
   color: hsl(300, 43%, 22%);
-  font-weight: 700px;
+  font-weight: 700;
   margin: 10px;
 }
 
-.subtitle
-{
+.subtitle {
   color: hsl(303, 10%, 53%);
   font-size: 1.1rem;
   margin-top: 10px;
@@ -448,9 +461,8 @@ footer {
   margin: 20px;
 }
 
-.ratings
-{
-  font-size:20px;
+.ratings {
+  font-size: 20px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -462,18 +474,17 @@ footer {
   font-weight: bold;
 }
 
-
-.rating-box-2{
+.rating-box-2 {
   padding-left: 50px;
   padding-top: 20px;
 }
 
-.rating-box-3{
+.rating-box-3 {
   padding-left: 100px;
   padding-top: 20px;
 }
 
-.stars{
-  color:orange;
+.stars {
+  color: orange;
   padding-right: 25px;
 }
