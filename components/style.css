@@ -115,21 +115,30 @@ nav {
     text-align: center;
   }
 
-  .company-name, .product-title, .product-description {
+  .info-section {
+    padding: 0 20px;
+    text-align: center;
+    padding-bottom: 50px;
+    padding-left: 0;
+  }
+
+  .product-title {
+    font-size: 32px;
     text-align: center;
   }
 
-  .info-section {
-    padding-left: 0;
-    padding-right: 0;
+  .company-name {
     text-align: center;
-    flex: 1 1 100%;
-    padding-bottom: 100px;
+  }
+
+  .product-description {
+    text-align: center;
+    font-size: 16px;
+    padding-top: 20px;
   }
 
   .add-to-cart-btn {
-    width: 80%;
-    margin: 0 auto;
+    width: 90%;
   }
 }
 
