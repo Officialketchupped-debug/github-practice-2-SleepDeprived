@@ -310,7 +310,7 @@ footer {
 .footer-socials a:hover img {
   transform: scale(1.1);
   opacity: 0.8;
-}}
+}
 
 .test
 {
@@ -450,10 +450,30 @@ footer {
 
 .ratings
 {
+  font-size:20px;
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
+  padding: 16px;
   margin: auto;
   color: hsl(300, 43%, 22%);
+  font-weight: bold;
+}
+
+
+.rating-box-2{
+  padding-left: 50px;
+  padding-top: 20px;
+}
+
+.rating-box-3{
+  padding-left: 100px;
+  padding-top: 20px;
+}
+
+.stars{
+  color:orange;
+  padding-right: 25px;
 }
